@@ -1,0 +1,31 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo" aria-label="Effective Altruism Denmark home">
+      <span class="logo-text">Effective Altruism <strong>Denmark</strong></span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="main-nav" aria-label="Main navigation">
+      {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-toggle">{{ .Name }}</button>
+            <ul class="nav-dropdown-menu">
+              {{ range .Children }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ else if not .Parent }}
+          <a href="{{ .URL }}" class="nav-link{{ if eq .Name "Donate" }} nav-link--donate{{ end }}"
+            {{ if strings.HasPrefix .URL "http" }}target="_blank" rel="noopener"{{ end }}>
+            {{ .Name }}
+          </a>
+        {{ end }}
+      {{ end }}
+    </nav>
+  </div>
+</header>

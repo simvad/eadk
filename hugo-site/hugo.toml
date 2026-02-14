@@ -1,0 +1,87 @@
+baseURL = 'https://effectivealtruism.dk/'
+languageCode = 'en'
+title = 'Effective Altruism Denmark'
+theme = 'eadk'
+
+[params]
+  description = "How do we help others the most with our time?"
+  tagline = "Let's Get Better at Doing Good"
+  email = "contact@effectivealtruism.dk"
+  address = "Vesterbrogade 149, Bygning 5"
+  city = "1620 København"
+  cvr = "41417226"
+  facebook = "https://www.facebook.com/EffectiveAltruismDK"
+  linkedin = "https://www.linkedin.com/company/11438277"
+  instagram = "https://www.instagram.com/effectivealtruismdenmark/"
+  youtube = "https://www.youtube.com/channel/UCGmtXxP3dHWz9Tte_k9spzQ/featured"
+  donateURL = "https://giveffektivt.dk"
+  bookChatURL = "https://effectivealtruism.dk/guidance/"
+
+[menu]
+  [[menu.main]]
+    name = "Take Action"
+    weight = 1
+    identifier = "take-action"
+    url = "#"
+  [[menu.main]]
+    name = "Become a Member"
+    parent = "take-action"
+    url = "/become-a-member/"
+    weight = 1
+  [[menu.main]]
+    name = "Career Guidance"
+    parent = "take-action"
+    url = "/guidance/"
+    weight = 2
+  [[menu.main]]
+    name = "Opportunity Board"
+    parent = "take-action"
+    url = "/opportunity-board/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Community"
+    weight = 2
+    identifier = "community"
+    url = "#"
+  [[menu.main]]
+    name = "Events"
+    parent = "community"
+    url = "/events/"
+    weight = 1
+  [[menu.main]]
+    name = "Chapters"
+    parent = "community"
+    url = "/chapters/"
+    weight = 2
+
+  [[menu.main]]
+    name = "About Us"
+    weight = 3
+    identifier = "about"
+    url = "#"
+  [[menu.main]]
+    name = "Blog"
+    parent = "about"
+    url = "/blog/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    parent = "about"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Contact"
+    parent = "about"
+    url = "/contact/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Donate"
+    weight = 4
+    url = "https://giveffektivt.dk"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

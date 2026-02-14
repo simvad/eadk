@@ -1,0 +1,279 @@
+/* ===== Theme: GivEffektivt-Inspired =====
+ * Bold, high-contrast, black/white with accent color
+ * Dynamic, modern, trust-building design
+ * Inspired by giveffektivt.dk's clean aesthetic
+ */
+
+:root {
+  --color-primary: #0066FF;
+  --color-primary-dark: #0052CC;
+  --color-primary-light: #3385FF;
+  --color-text: #111111;
+  --color-text-light: #555555;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f5f5f5;
+  --color-bg-dark: #0a0a0a;
+  --color-border: #e0e0e0;
+  --color-accent: #00CC88;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --max-width: 1100px;
+  --header-height: 64px;
+}
+
+/* Override serif with sans-serif for a more modern feel */
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+h1 { font-size: clamp(2.5rem, 6vw, 4rem); }
+h2 { font-size: clamp(1.75rem, 4.5vw, 2.75rem); }
+
+/* ===== Header ===== */
+.site-header {
+  background: var(--color-bg-dark);
+  border-bottom: none;
+}
+.logo-text { color: #fff; }
+.nav-link, .nav-dropdown-toggle { color: rgba(255,255,255,0.8); }
+.nav-link:hover, .nav-dropdown-toggle:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.1);
+}
+.nav-link--donate {
+  background: var(--color-primary);
+  color: #fff !important;
+}
+.nav-link--donate:hover { background: var(--color-primary-dark); }
+
+.nav-dropdown-menu {
+  background: var(--color-bg-dark);
+  border-color: rgba(255,255,255,0.1);
+}
+.nav-dropdown-menu li a { color: rgba(255,255,255,0.8); }
+.nav-dropdown-menu li a:hover { background: rgba(255,255,255,0.1); }
+
+.menu-toggle span { background: #fff; }
+
+/* ===== Hero ===== */
+.hero {
+  background: var(--color-bg-dark);
+  min-height: 90vh;
+  padding-bottom: 6rem;
+}
+.hero::before { display: none; }
+.hero-overlay { display: none; }
+.hero h1 {
+  font-size: clamp(3rem, 8vw, 5rem);
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+.hero-tagline {
+  font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+  color: rgba(255,255,255,0.6);
+  font-weight: 400;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Buttons - GivEffektivt style */
+.btn {
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.btn--primary {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.btn--primary:hover {
+  background: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+.btn--outline {
+  border-color: rgba(255,255,255,0.3);
+}
+.btn--outline:hover {
+  background: #fff;
+  color: var(--color-bg-dark);
+  border-color: #fff;
+}
+.btn--secondary {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.btn--secondary:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+/* ===== Sections ===== */
+.section { padding: 6rem 0; }
+.section-label {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+}
+.section-title {
+  letter-spacing: -0.03em;
+}
+
+/* ===== Value Cards ===== */
+.value-card {
+  border: none;
+  background: var(--color-bg-alt);
+  border-radius: 16px;
+  padding: 2.5rem;
+}
+.value-card:hover {
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+}
+.value-icon {
+  background: var(--color-bg-dark);
+  color: #fff;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+.value-card h3 { font-weight: 700; }
+
+/* ===== Two Col ===== */
+.two-col { gap: 5rem; }
+.video-embed {
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+}
+
+/* ===== Media Coverage ===== */
+.media-logo {
+  border: none;
+  background: var(--color-bg-alt);
+  border-radius: 12px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+.media-logo:hover {
+  background: var(--color-bg-dark);
+  color: #fff;
+}
+
+/* ===== Newsletter ===== */
+.newsletter-section {
+  background: var(--color-primary);
+  padding: 5rem 0;
+}
+.newsletter-form input {
+  background: rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.3);
+  border-radius: 50px;
+  padding: 0.875rem 1.25rem;
+}
+.newsletter-form input:focus {
+  background: rgba(255,255,255,0.3);
+}
+.newsletter-form .btn {
+  background: #fff;
+  color: var(--color-primary);
+  border-color: #fff;
+}
+.newsletter-form .btn:hover {
+  background: rgba(255,255,255,0.9);
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: var(--color-bg-dark);
+  padding: 5rem 0 3rem;
+}
+
+/* ===== Floating CTA ===== */
+.floating-cta {
+  background: var(--color-primary);
+  box-shadow: 0 4px 20px rgba(0, 102, 255, 0.3);
+}
+.floating-cta:hover {
+  background: var(--color-primary-dark);
+  box-shadow: 0 6px 25px rgba(0, 102, 255, 0.4);
+}
+
+/* ===== Page Header ===== */
+.page-header {
+  background: var(--color-bg-dark);
+}
+.page-hero {
+  background: var(--color-bg-dark);
+  min-height: 45vh;
+}
+.chapter-hero {
+  background: var(--color-bg-dark);
+}
+
+/* ===== Cards ===== */
+.card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.card:hover {
+  box-shadow: 0 16px 48px rgba(0,0,0,0.1);
+}
+.card-tag {
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* ===== Chapter Cards ===== */
+.chapter-card {
+  border: none;
+  background: var(--color-bg-alt);
+  border-radius: 16px;
+}
+.chapter-card:hover {
+  background: #fff;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+}
+.chapter-card-icon {
+  background: var(--color-bg-dark);
+  color: #fff;
+  font-weight: 800;
+}
+
+/* ===== Stats ===== */
+.stat-number {
+  color: var(--color-primary);
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+/* ===== Team ===== */
+.team-member-photo {
+  border: 3px solid var(--color-bg-dark);
+  background: var(--color-bg-dark);
+  color: #fff;
+  font-weight: 700;
+}
+
+/* ===== Image placeholder ===== */
+.image-placeholder {
+  background: var(--color-bg-dark);
+  border: none;
+  border-radius: 16px;
+  color: rgba(255,255,255,0.2);
+}
+
+/* Responsive overrides */
+@media (max-width: 768px) {
+  .main-nav {
+    background: var(--color-bg-dark);
+    border-bottom-color: rgba(255,255,255,0.1);
+  }
+  .nav-dropdown-menu {
+    background: rgba(255,255,255,0.05);
+  }
+}

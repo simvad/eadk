@@ -1,0 +1,119 @@
+{{ define "main" }}
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Effective Altruism Denmark</h1>
+    <p class="hero-tagline">{{ .Site.Params.tagline }}</p>
+    <div class="hero-ctas">
+      <a href="/guidance/" class="btn btn--primary btn--lg">Get Career Guidance</a>
+      <a href="/events/" class="btn btn--outline btn--lg">Attend an Event</a>
+    </div>
+  </div>
+</section>
+
+<!-- About EA Section -->
+<section class="section about-ea">
+  <div class="container">
+    <p class="section-label">About Effective Altruism</p>
+    <h2 class="section-title">How Can We Use Our Time &amp; Money to Help Others the Most?</h2>
+    <p class="section-intro">The effective altruist community believes that when doing good, we should use evidence and reason to guide us. Effective altruists aim to consider all causes and actions, and then act in the way that brings about the greatest positive impact.</p>
+
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </div>
+        <h3>Radical Empathy</h3>
+        <p>Moral consideration should extend beyond traditionally recognised groups to encompass a broader range of entities. It emphasizes the importance of identifying and valuing all beings and entities, regardless of their differences from us.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>Scope Sensitivity</h3>
+        <p>A willingness to make decisions based on a comprehensive understanding of impact and scale. It involves choosing ways to improve the world based on systematic evaluation rather than personal biases.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </div>
+        <h3>Scout Mindset</h3>
+        <p>The search to see the world as it truly is, not as we wish it to be. Consider other views and cognitive biases, and be willing to update our view based on new information.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What is EA Section -->
+<section class="section section--alt what-is-ea">
+  <div class="container">
+    <div class="two-col">
+      <div class="two-col__media">
+        <h2>What is effective altruism?</h2>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/WyprXhvGVYk" title="What are the most important moral problems of our time? | Will MacAskill" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="two-col__text">
+        <p>Many of us aspire to make a meaningful impact in the world. Witnessing suffering, injustice, and death prompts us to want to take action. Yet, finding a tangible solution to these issues, and more importantly, implementing it, is not straightforward.</p>
+        <p>Effective altruism offers a solution to this challenge. It is a research field dedicated to maximizing the impact of our efforts to aid others. By employing rigorous evidence and thoughtful reasoning, effective altruism seeks to address the question of how we can help others most effectively.</p>
+        <a href="/introduction/" class="btn btn--secondary">More Information</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Where to Donate Section -->
+<section class="section where-to-donate">
+  <div class="container">
+    <div class="two-col two-col--reverse">
+      <div class="two-col__text">
+        <h2>Where to Donate</h2>
+        <p>In the quest to solve the world's most pressing issues, it's crucial to distinguish between effective and ineffective methods. Many solutions, while well-intentioned, fall short or can even be detrimental. Only a select few approaches yield significantly higher effectiveness.</p>
+        <p>To identify these exceptional strategies, we recommend turning to organizations grounded in effective altruism principles. Our sister organization, <strong>Giv Effektivt</strong>, utilizes <a href="https://www.givewell.org/research">research</a> published by <a href="https://givewell.org">GiveWell</a> to ensure recommendations are concentrated on <a href="https://giveffektivt.dk/anbefalinger">the most impactful solutions</a>.</p>
+        <a href="https://giveffektivt.dk" target="_blank" rel="noopener" class="btn btn--secondary">Donate via Giv Effektivt</a>
+      </div>
+      <div class="two-col__media">
+        <div class="image-placeholder">
+          <svg viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="currentColor" stroke-width="1"><path d="M21 15l-5-5L5 21"/><circle cx="8.5" cy="8.5" r="2.5"/><rect x="2" y="2" width="20" height="20" rx="2"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Career Section -->
+<section class="section section--alt career-section">
+  <div class="container">
+    <div class="two-col">
+      <div class="two-col__media">
+        <div class="image-placeholder">
+          <svg viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="currentColor" stroke-width="1"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+        </div>
+      </div>
+      <div class="two-col__text">
+        <h2>How to do well with your career?</h2>
+        <p>Most of us want to do something important in the world. Seeing suffering, injustice, and death around us makes us want to do something about it. However, it is not very easy to find an answer to the question of what can be done for this.</p>
+        <p>One response to this challenge is effective altruism. The research field of effective altruism focuses on the question of how to help others as much as possible. It uses high-quality evidence and careful argumentation to examine it.</p>
+        <a href="/guidance/" class="btn btn--secondary">Get Career Guidance</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Media Coverage -->
+<section class="section media-coverage">
+  <div class="container text-center">
+    <h2 class="section-title section-title--accent">Media Coverage</h2>
+    <div class="media-logos">
+      <a href="https://videnskab.dk/kultur-samfund/du-kan-vaere-en-superhelt-og-redde-flere-liv-end-du-maaske-tror/" target="_blank" rel="noopener" class="media-logo">Videnskab.dk</a>
+      <a href="https://www.kristeligt-dagblad.dk/liv-og-sjael/et-liv-eller-tre-der-er-stor-forskel-paa-hvor-langt-bidrag-til-velgoerenhed-raekker" target="_blank" rel="noopener" class="media-logo">Kristeligt Dagblad</a>
+      <a href="https://www.zetland.dk/historie/sOZkb3Na-aekdm0J7-2e0b2" target="_blank" rel="noopener" class="media-logo">Zetland</a>
+      <a href="https://www.radio4.dk/program/overskud/?gid=48650" target="_blank" rel="noopener" class="media-logo">Radio4</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

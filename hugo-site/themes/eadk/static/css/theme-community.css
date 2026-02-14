@@ -1,0 +1,239 @@
+/* ===== Theme: Community/Oxford-Inspired =====
+ * Warm, approachable, community-focused
+ * Inspired by EA Oxford, EA Switzerland
+ * Soft colors, friendly typography, welcoming design
+ */
+
+:root {
+  --color-primary: #1B6B5A;
+  --color-primary-dark: #145549;
+  --color-primary-light: #2A9D7E;
+  --color-text: #1F2937;
+  --color-text-light: #6B7280;
+  --color-bg: #FAFAF8;
+  --color-bg-alt: #F0EFEB;
+  --color-bg-dark: #1F2937;
+  --color-border: #E5E4DF;
+  --color-accent: #E8735A;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --max-width: 1080px;
+  --header-height: 72px;
+}
+
+body { background: var(--color-bg); }
+
+h1, h2, h3 {
+  color: var(--color-text);
+}
+h1 { font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.15; }
+
+/* ===== Header ===== */
+.site-header {
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+.nav-link--donate {
+  background: var(--color-primary);
+  border-radius: 8px;
+}
+.nav-link--donate:hover {
+  background: var(--color-primary-dark);
+}
+
+/* ===== Hero ===== */
+.hero {
+  background: linear-gradient(160deg, #E8F5E9 0%, #E3F2FD 40%, #FFF8E1 100%);
+  min-height: 75vh;
+}
+.hero::before { display: none; }
+.hero-overlay { display: none; }
+.hero h1 {
+  color: var(--color-text);
+  font-size: clamp(2.5rem, 6vw, 3.75rem);
+  line-height: 1.1;
+}
+.hero-tagline {
+  color: var(--color-text-light);
+  font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+  font-weight: 400;
+}
+.hero-ctas .btn--primary {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.hero-ctas .btn--primary:hover {
+  background: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+.hero-ctas .btn--outline {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.hero-ctas .btn--outline:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+/* ===== Buttons ===== */
+.btn { border-radius: 8px; }
+.btn--primary {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.btn--primary:hover {
+  background: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+.btn--secondary {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.btn--secondary:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+a { color: var(--color-primary); }
+a:hover { color: var(--color-primary-dark); }
+
+/* ===== Section ===== */
+.section-label { color: var(--color-primary); }
+.section-title--accent { color: var(--color-primary); }
+.section--alt { background: var(--color-bg-alt); }
+
+/* ===== Values ===== */
+.value-card {
+  background: #fff;
+  border-color: var(--color-border);
+  border-radius: 16px;
+}
+.value-card:hover {
+  border-color: var(--color-primary);
+}
+.value-icon {
+  background: rgba(27, 107, 90, 0.08);
+  color: var(--color-primary);
+  border-radius: 16px;
+}
+
+/* ===== Video ===== */
+.video-embed {
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+/* ===== Media logos ===== */
+.media-logo {
+  background: #fff;
+  border-color: var(--color-border);
+  border-radius: 12px;
+}
+.media-logo:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+/* ===== Newsletter ===== */
+.newsletter-section {
+  background: var(--color-primary);
+}
+.newsletter-form input {
+  border-radius: 8px;
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.3);
+}
+.newsletter-form input:focus {
+  background: rgba(255,255,255,0.25);
+}
+.newsletter-form .btn {
+  background: #fff;
+  color: var(--color-primary);
+  border-color: #fff;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: var(--color-bg-dark);
+}
+
+/* ===== Floating CTA ===== */
+.floating-cta {
+  background: var(--color-accent);
+  box-shadow: 0 4px 20px rgba(232, 115, 90, 0.3);
+}
+.floating-cta:hover {
+  background: #D4634A;
+  box-shadow: 0 6px 25px rgba(232, 115, 90, 0.4);
+}
+
+/* ===== Page headers ===== */
+.page-header {
+  background: var(--color-primary);
+}
+.page-hero {
+  background: linear-gradient(160deg, var(--color-primary-dark), var(--color-primary));
+}
+.chapter-hero {
+  background: linear-gradient(160deg, var(--color-primary-dark), var(--color-primary));
+}
+
+/* ===== Cards ===== */
+.card {
+  background: #fff;
+  border-color: var(--color-border);
+  border-radius: 16px;
+}
+.card:hover { border-color: var(--color-primary); }
+.card-tag {
+  background: rgba(27, 107, 90, 0.08);
+  color: var(--color-primary);
+}
+.card-title a:hover { color: var(--color-primary); }
+
+/* ===== Chapter Cards ===== */
+.chapter-card {
+  background: #fff;
+  border-radius: 16px;
+  border-color: var(--color-border);
+}
+.chapter-card:hover {
+  border-color: var(--color-primary);
+}
+.chapter-card-icon {
+  background: rgba(27, 107, 90, 0.08);
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* ===== Stats ===== */
+.stat-number { color: var(--color-primary); }
+
+/* ===== Team ===== */
+.team-member-photo {
+  border-color: var(--color-primary);
+  background: rgba(27, 107, 90, 0.08);
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* ===== Image placeholder ===== */
+.image-placeholder {
+  background: var(--color-bg-alt);
+  border-color: var(--color-border);
+  border-radius: 16px;
+}
+
+/* ===== Content ===== */
+.content a { color: var(--color-primary); }
+
+/* ===== Forms ===== */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(27, 107, 90, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero { min-height: 65vh; }
+}

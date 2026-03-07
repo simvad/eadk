@@ -1,4 +1,5 @@
-hugo-site/public/
+public/
+.hugo_build.lock
 .playwright-mcp/
 /*.png
 /*.jpeg

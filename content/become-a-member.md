@@ -11,7 +11,6 @@ Annual membership dues are **50 DKK**. As a member you can:
 - Choose your membership pathway and engagement level
 - Attend annual events including our summer retreat
 - Subscribe to our calendar and access event photos
-- Join our Discord forum for ongoing discussions
 - Participate in projects and working groups
 - Get assistance with self-development and career planning
 - Volunteer for impactful projects

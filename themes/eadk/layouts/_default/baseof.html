@@ -23,8 +23,8 @@
   {{ partial "newsletter.html" . }}
   {{ partial "footer.html" . }}
 
-  <a href="{{ .Site.Params.bookChatURL }}" class="floating-cta" aria-label="Book a Chat With Us">
-    Book a Chat With Us
+  <a href="{{ .Site.Params.bookChatURL }}" class="floating-cta" aria-label="{{ i18n "bookChat" }}">
+    {{ i18n "bookChat" }}
   </a>
 
   <script src="{{ "js/main.js" | relURL }}"></script>

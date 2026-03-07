@@ -1,8 +1,0 @@
-[    1765ms] [WARNING] yui: NOT loaded: squarespace-cldr_resource_pack @ https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js:7
-[    1766ms] [WARNING] yui: NOT loaded: squarespace-common_vendors_stable @ https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js:7
-[    1766ms] [WARNING] yui: NOT loaded: squarespace-common_vendors @ https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js:7
-[    1772ms] [WARNING] yui: NOT loaded: squarespace-performance @ https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js:7
-[    1772ms] [WARNING] yui: NOT loaded: squarespace-extension_scripts @ https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js:7
-[    1780ms] [WARNING] Unrecognized feature: 'web-share'. @ https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js:7
-[    2298ms] [ERROR] eapps.Platform throws: "Widget "459407d3-5612-4c10-84c4-0bbb17ba36cf" can`t be initialized because APP_VIEWS_LIMIT_REACHED" with 
-	 -> JSHandle@node @ https://static.elfsight.com/platform/platform.js:15

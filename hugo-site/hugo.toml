@@ -48,15 +48,10 @@ theme = 'eadk'
     identifier = "about"
     url = "#"
   [[menu.main]]
-    name = "Blog"
-    parent = "about"
-    url = "/blog/"
-    weight = 1
-  [[menu.main]]
     name = "About"
     parent = "about"
     url = "/about/"
-    weight = 2
+    weight = 1
   [[menu.main]]
     name = "Contact"
     parent = "about"

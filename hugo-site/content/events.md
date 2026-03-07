@@ -17,5 +17,4 @@ Follow us on [Facebook](https://www.facebook.com/EffectiveAltruismDK) for event 
 
 ## Upcoming Events
 
-<!-- TODO: Replace with your Google Calendar ID -->
-{{< gcal src="YOUR_CALENDAR_ID@group.calendar.google.com" >}}
+{{< gcal src="gi88enlc6192c2o25p6igk6rcc@group.calendar.google.com" >}}

@@ -14,7 +14,7 @@
   --color-accent: #2d6a4f;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
-  --max-width: 1140px;
+  --max-width: 1320px;
   --header-height: 72px;
 }
 
@@ -22,7 +22,7 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-sans);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.7;
   color: var(--color-text);
   background: var(--color-bg);

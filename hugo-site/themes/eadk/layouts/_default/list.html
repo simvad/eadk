@@ -18,8 +18,7 @@
         <div class="card-body">
           {{ with .Params.category }}<span class="card-tag">{{ . }}</span>{{ end }}
           <h2 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-          <time class="card-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
-          <p class="card-excerpt">{{ .Summary }}</p>
+          {{ with .Params.author }}<span class="card-author">{{ . }}</span>{{ end }}
         </div>
       </article>
       {{ end }}

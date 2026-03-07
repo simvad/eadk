@@ -14,3 +14,8 @@ We regularly host:
 - **Guest lectures** from researchers and practitioners
 
 Follow us on [Facebook](https://www.facebook.com/EffectiveAltruismDK) for event updates, or [become a member](/become-a-member/) to get access to our community calendar.
+
+## Upcoming Events
+
+<!-- TODO: Replace with your Google Calendar ID -->
+{{< gcal src="YOUR_CALENDAR_ID@group.calendar.google.com" >}}

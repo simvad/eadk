@@ -9,12 +9,11 @@
 
 <section class="section">
   <div class="container">
-    <p class="section-intro">Effective Altruism Denmark has active chapters across the country. Find your local community and get involved in events, discussions, and projects near you.</p>
+    <p class="section-intro">Effective Altruism Denmark has active local groups across the country. Find your local community and get involved in events, discussions, and projects near you.</p>
 
     <div class="chapter-grid">
       {{ range .Pages }}
       <a href="{{ .RelPermalink }}" class="chapter-card" style="text-decoration:none; color:inherit;">
-        <div class="chapter-card-icon">{{ .Params.icon }}</div>
         <h3>{{ .Title }}</h3>
         <p>{{ .Params.description }}</p>
         <span class="btn btn--secondary" style="font-size:0.875rem; padding:0.5rem 1.25rem;">Learn More</span>

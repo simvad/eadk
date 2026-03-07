@@ -19,6 +19,17 @@
 <section class="section">
   <div class="container content">
     {{ .Content }}
+
+    {{ with .Params.author }}
+    <div class="author-bio">
+      {{ with $.Params.author_image }}<img src="{{ . }}" alt="{{ $.Params.author }}" class="author-bio-photo">{{ end }}
+      <div class="author-bio-info">
+        <h3>{{ $.Params.author }}</h3>
+        {{ with $.Params.author_title }}<div class="author-title">{{ . }}</div>{{ end }}
+        {{ with $.Params.author_bio }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </div>
+    {{ end }}
   </div>
 </section>
 

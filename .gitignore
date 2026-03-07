@@ -1,0 +1,4 @@
+hugo-site/public/
+.playwright-mcp/
+/*.png
+/*.jpeg

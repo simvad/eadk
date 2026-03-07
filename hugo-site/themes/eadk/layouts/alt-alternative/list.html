@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title | default .Site.Title }}</title>
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/alt-alternative.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Effective Altruism Denmark</a>
+
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <nav class="header-nav" id="mainNav">
+        <a href="#get-involved" class="nav-link">Take Action</a>
+        <a href="#community" class="nav-link">Community</a>
+        <a href="#chapters" class="nav-link">Local Groups</a>
+        <a href="#faq" class="nav-link">About Us</a>
+        <a href="/become-a-member/" class="nav-link nav-link--pill">Join Us</a>
+      </nav>
+    </div>
+    <!-- Layout switcher for preview -->
+    <div id="theme-switcher" style="position:fixed;top:80px;right:16px;z-index:999;background:#fff;border:1px solid #ddd;border-radius:8px;padding:10px 14px;box-shadow:0 4px 12px rgba(0,0,0,0.1);font-family:sans-serif;font-size:13px;display:flex;flex-direction:column;gap:6px;">
+      <strong style="margin-bottom:2px;">Compare layouts:</strong>
+      <a href="/" style="display:block;padding:5px 10px;border-radius:4px;background:#722F37;color:#fff;text-align:center;text-decoration:none;">&larr; Original</a>
+      <span style="padding:5px 10px;border-radius:4px;background:#f0f0f0;color:#555;text-align:center;">Community (Current)</span>
+    </div>
+  </header>
+
+  <!-- ============ HERO (Split Layout) ============ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Together, we can do more good</h1>
+        <p>We are a community of people in Denmark using evidence and reason to figure out how to help others as much as possible. Whether you are curious or committed, there is a place for you here.</p>
+        <a href="#get-involved" class="btn btn-primary">Get Involved</a>
+      </div>
+      <div class="hero-illustration">
+        <!-- Community / people illustration placeholder -->
+        <svg viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="hero-svg">
+          <!-- Background blob -->
+          <ellipse cx="240" cy="200" rx="200" ry="140" fill="#E0F2EE" opacity="0.5"/>
+          <!-- Person 1 -->
+          <circle cx="140" cy="160" r="28" fill="#1B6B5A"/>
+          <rect x="118" y="195" width="44" height="60" rx="14" fill="#1B6B5A"/>
+          <!-- Person 2 -->
+          <circle cx="240" cy="140" r="32" fill="#E8735A"/>
+          <rect x="214" y="180" width="52" height="68" rx="16" fill="#E8735A"/>
+          <!-- Person 3 -->
+          <circle cx="340" cy="160" r="28" fill="#4A9E8E"/>
+          <rect x="318" y="195" width="44" height="60" rx="14" fill="#4A9E8E"/>
+          <!-- Person 4 (smaller, background) -->
+          <circle cx="185" cy="200" r="20" fill="#F2C078" opacity="0.8"/>
+          <rect x="169" y="225" width="32" height="44" rx="10" fill="#F2C078" opacity="0.8"/>
+          <!-- Person 5 (smaller, background) -->
+          <circle cx="300" cy="200" r="20" fill="#7EBFB3" opacity="0.8"/>
+          <rect x="284" y="225" width="32" height="44" rx="10" fill="#7EBFB3" opacity="0.8"/>
+          <!-- Connecting arcs -->
+          <path d="M160 170 Q 200 120 230 145" stroke="#1B6B5A" stroke-width="2" stroke-dasharray="4 4" opacity="0.4"/>
+          <path d="M260 145 Q 300 115 330 160" stroke="#E8735A" stroke-width="2" stroke-dasharray="4 4" opacity="0.4"/>
+          <!-- Heart -->
+          <path d="M236 100 C 236 94 242 88 248 88 C 254 88 260 94 260 100 C 260 94 266 88 272 88 C 278 88 284 94 284 100 C 284 112 260 128 260 128 C 260 128 236 112 236 100Z" fill="#E8735A" opacity="0.6"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GET INVOLVED PATHWAY CARDS ============ -->
+  <section class="pathway-section" id="get-involved">
+    <div class="container">
+      <h2 class="section-heading">Get Involved</h2>
+      <p class="section-subheading">There are many ways to start making a difference today</p>
+
+      <div class="pathway-grid">
+        <!-- Card 1: Attend an Event -->
+        <a href="/events/" class="pathway-card">
+          <div class="pathway-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" width="48" height="48">
+              <rect x="6" y="10" width="36" height="32" rx="4"/>
+              <path d="M6 20h36"/>
+              <path d="M16 6v8M32 6v8"/>
+              <circle cx="24" cy="30" r="4" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <h3>Attend an Event</h3>
+          <p>Meet like-minded people at socials, talks, and workshops across Denmark.</p>
+        </a>
+
+        <!-- Card 2: Join a Reading Group -->
+        <a href="/community/" class="pathway-card">
+          <div class="pathway-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" width="48" height="48">
+              <path d="M6 8c6-2 12 0 18 3c6-3 12-5 18-3v30c-6-2-12 0-18 3c-6-3-12-5-18-3V8z"/>
+              <path d="M24 11v30"/>
+            </svg>
+          </div>
+          <h3>Join a Reading Group</h3>
+          <p>Explore key ideas in EA through structured discussions with a small group.</p>
+        </a>
+
+        <!-- Card 3: Get Career Advice -->
+        <a href="{{ .Site.Params.bookChatURL }}" class="pathway-card">
+          <div class="pathway-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" width="48" height="48">
+              <rect x="8" y="14" width="32" height="24" rx="3"/>
+              <path d="M16 14V10a8 8 0 0 1 16 0v4"/>
+              <circle cx="24" cy="26" r="3" fill="currentColor" stroke="none"/>
+              <path d="M24 29v4"/>
+            </svg>
+          </div>
+          <h3>Get Career Advice</h3>
+          <p>Book a free one-on-one chat about how to have more impact with your career.</p>
+        </a>
+
+        <!-- Card 4: Start Donating Effectively -->
+        <a href="{{ .Site.Params.donateURL }}" class="pathway-card" target="_blank" rel="noopener">
+          <div class="pathway-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" width="48" height="48">
+              <path d="M24 42S6 30 6 18a9 9 0 0 1 18 0 9 9 0 0 1 18 0c0 12-18 24-18 24z"/>
+            </svg>
+          </div>
+          <h3>Start Donating Effectively</h3>
+          <p>Give where it matters most through our partner, Giv Effektivt.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMMUNITY PROOF ============ -->
+  <section class="community-proof" id="community">
+    <div class="container">
+      <h2 class="section-heading">Join 200+ effective altruists across Denmark</h2>
+      <p class="section-subheading">People from all backgrounds committed to doing the most good</p>
+
+      <div class="avatar-row">
+        <div class="avatar" style="background-color: #1B6B5A;">MK</div>
+        <div class="avatar" style="background-color: #E8735A;">SL</div>
+        <div class="avatar" style="background-color: #4A9E8E;">AJ</div>
+        <div class="avatar" style="background-color: #F2C078;">KN</div>
+        <div class="avatar" style="background-color: #7EBFB3;">PR</div>
+        <div class="avatar" style="background-color: #C85A44;">LH</div>
+        <div class="avatar" style="background-color: #2A8F7A;">TE</div>
+        <div class="avatar" style="background-color: #D4956A;">JF</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOCAL CHAPTERS ============ -->
+  <section class="chapters-section" id="chapters">
+    <div class="container">
+      <h2 class="section-heading">Find Your Local Chapter</h2>
+      <p class="section-subheading">Connect with effective altruists in your city</p>
+
+      <div class="chapters-grid">
+        <div class="chapter-card">
+          <h3>Copenhagen</h3>
+          <p>Our largest and most active chapter with regular socials, talks, and reading groups in the capital.</p>
+          <a href="/chapters/copenhagen/" class="chapter-link">Learn More &rarr;</a>
+        </div>
+        <div class="chapter-card">
+          <h3>Aarhus</h3>
+          <p>A growing community of students and professionals in Denmark's second city.</p>
+          <a href="/chapters/aarhus/" class="chapter-link">Learn More &rarr;</a>
+        </div>
+        <div class="chapter-card">
+          <h3>Odense</h3>
+          <p>Home to an engaged university group exploring effective altruism ideas together.</p>
+          <a href="/chapters/odense/" class="chapter-link">Learn More &rarr;</a>
+        </div>
+        <div class="chapter-card">
+          <h3>Aalborg</h3>
+          <p>A newer chapter building a community of impact-minded people in northern Jutland.</p>
+          <a href="/chapters/aalborg/" class="chapter-link">Learn More &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ACCORDION ============ -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <h2 class="section-heading">Frequently Asked Questions</h2>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>What is effective altruism?</summary>
+          <div class="faq-answer">
+            <p>Effective altruism is a research field and community dedicated to finding the best ways to help others. It uses evidence and careful reasoning to determine the most effective ways to improve the world. This means not just asking "How can I make a difference?" but "How can I make the <em>biggest</em> difference?"</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>How can I get involved?</summary>
+          <div class="faq-answer">
+            <p>There are many ways to get started! You could attend one of our events, join an introductory reading group, book a free career chat, or start by visiting <a href="{{ .Site.Params.donateURL }}">Giv Effektivt</a> to learn about high-impact giving. We welcome people at every stage of their EA journey.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Where should I donate?</summary>
+          <div class="faq-answer">
+            <p>We recommend donating through <a href="{{ .Site.Params.donateURL }}">Giv Effektivt</a>, our Danish sister organization. They follow research from GiveWell and other evaluators to recommend charities that save the most lives per krone donated. You also get Danish tax deductions.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is EA just about donating money?</summary>
+          <div class="faq-answer">
+            <p>Not at all! While effective giving is one important part, EA also encompasses career choice, volunteering, research, and community building. Many people find that choosing the right career is one of the highest-impact decisions they can make. Our career guidance service can help you think through your options.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ UPCOMING EVENTS STRIP ============ -->
+  <section class="events-strip" id="events">
+    <div class="container">
+      <h2 class="section-heading">Upcoming Events</h2>
+
+      <div class="events-row">
+        <div class="event-card">
+          <div class="event-date">
+            <span class="event-month">MAR</span>
+            <span class="event-day">12</span>
+          </div>
+          <div class="event-info">
+            <h3>EA Social &amp; Drinks</h3>
+            <p class="event-location">Copenhagen</p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date">
+            <span class="event-month">MAR</span>
+            <span class="event-day">19</span>
+          </div>
+          <div class="event-info">
+            <h3>Intro to EA Reading Group</h3>
+            <p class="event-location">Aarhus</p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date">
+            <span class="event-month">APR</span>
+            <span class="event-day">02</span>
+          </div>
+          <div class="event-info">
+            <h3>Career Workshop: High-Impact Paths</h3>
+            <p class="event-location">Online</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="events-cta">
+        <a href="/events/" class="btn btn-outline">See All Events</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VIDEO + EXPLAINER (2-column) ============ -->
+  <section class="video-section">
+    <div class="container">
+      <div class="video-two-col">
+        <div class="video-embed-wrap">
+          <div class="video-responsive">
+            <iframe
+              src="https://www.youtube.com/embed/WyprXhvGVYk"
+              title="What are the most important moral problems of our time? | Will MacAskill"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+        <div class="video-text">
+          <h2>What is Effective Altruism?</h2>
+          <p>In this short talk, philosopher Will MacAskill explains the core ideas behind effective altruism: using evidence and reason to figure out how to do the most good in the world.</p>
+          <p>Many of us want to make a difference, but finding the most impactful way to help is not straightforward. EA offers a framework for thinking carefully about where our efforts can go furthest.</p>
+          <a href="/introduction/" class="btn btn-outline">Learn More About EA</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER + COMMUNITY LINKS ============ -->
+  <section class="join-section" id="join">
+    <div class="container">
+      <h2 class="section-heading">Join Our Community</h2>
+      <p class="section-subheading">Stay updated and connect with other effective altruists in Denmark</p>
+
+      <div class="join-grid">
+        <div class="join-newsletter">
+          <h3>Subscribe to Our Newsletter</h3>
+          <p>Get monthly updates on events, opportunities, and EA news in Denmark.</p>
+          <form class="newsletter-form" action="#" method="POST">
+            <div class="form-row">
+              <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="join-links">
+          <h3>Connect With Us</h3>
+          <p>Join the conversation on your preferred platform.</p>
+          <div class="social-links">
+            <a href="#" class="social-link social-link--discord">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+              <span>Join Discord</span>
+            </a>
+            <a href="#" class="social-link social-link--whatsapp">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.12 1.52 5.855L.054 23.52l5.79-1.519A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.994 0-3.87-.553-5.474-1.515l-.393-.233-3.437.902.917-3.35-.256-.406A9.686 9.686 0 0 1 2.25 12c0-5.385 4.365-9.75 9.75-9.75S21.75 6.615 21.75 12s-4.365 9.75-9.75 9.75z"/></svg>
+              <span>WhatsApp Group</span>
+            </a>
+            <a href="{{ .Site.Params.facebook }}" class="social-link social-link--facebook" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <span>Facebook</span>
+            </a>
+            <a href="{{ .Site.Params.linkedin }}" class="social-link social-link--linkedin" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <!-- Partners -->
+      <div class="footer-partners">
+        <h3>Our Partners</h3>
+        <div class="partner-logos">
+          <a href="https://www.givewell.org" target="_blank" rel="noopener" class="partner-logo">GiveWell</a>
+          <a href="https://80000hours.org" target="_blank" rel="noopener" class="partner-logo">80,000 Hours</a>
+          <a href="https://www.givingwhatwecan.org" target="_blank" rel="noopener" class="partner-logo">Giving What We Can</a>
+          <a href="https://giveffektivt.dk" target="_blank" rel="noopener" class="partner-logo">Giv Effektivt</a>
+        </div>
+      </div>
+
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4>Get Involved</h4>
+          <ul>
+            <li><a href="/events/">Events</a></li>
+            <li><a href="/guidance/">Career Guidance</a></li>
+            <li><a href="/become-a-member/">Become a Member</a></li>
+            <li><a href="{{ .Site.Params.donateURL }}">Donate</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Learn More</h4>
+          <ul>
+            <li><a href="/introduction/">Introduction to EA</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/chapters/">Local Groups</a></li>
+            <li><a href="/about/">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></li>
+            <li>{{ .Site.Params.address }}</li>
+            <li>{{ .Site.Params.city }}</li>
+            <li>CVR: {{ .Site.Params.cvr }}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ INLINE SCRIPT ============ -->
+  <script>
+  (function() {
+    // Mobile menu toggle
+    var toggle = document.querySelector('.mobile-menu-toggle');
+    var nav = document.getElementById('mainNav');
+
+    if (toggle && nav) {
+      toggle.addEventListener('click', function() {
+        var expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('nav-open');
+        toggle.classList.toggle('is-active');
+      });
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        var targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        var target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // Close mobile nav if open
+          if (nav && nav.classList.contains('nav-open')) {
+            nav.classList.remove('nav-open');
+            toggle.classList.remove('is-active');
+            toggle.setAttribute('aria-expanded', 'false');
+          }
+        }
+      });
+    });
+  })();
+  </script>
+
+</body>
+</html>

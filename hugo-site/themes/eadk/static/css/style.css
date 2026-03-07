@@ -67,6 +67,8 @@ h4 { font-size: 1.125rem; }
   background: var(--color-primary-dark);
   border-color: var(--color-primary-dark);
   color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 26, 43, 0.3);
 }
 .btn--secondary {
   background: transparent;
@@ -427,7 +429,7 @@ h4 { font-size: 1.125rem; }
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   gap: 3rem;
 }
 .footer-logo {
@@ -462,11 +464,10 @@ h4 { font-size: 1.125rem; }
 }
 .social-links a:hover { background: rgba(255,255,255,0.2); color: #fff; }
 
-.footer-feedback p {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 0.75rem;
+.footer-logo-img {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 1rem;
 }
 .footer-links h3 {
   color: #fff;
@@ -538,6 +539,8 @@ h4 { font-size: 1.125rem; }
 .content ul, .content ol { margin-bottom: 1rem; padding-left: 1.5rem; color: var(--color-text-light); }
 .content li { margin-bottom: 0.5rem; line-height: 1.7; }
 .content a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+.content a.btn { text-decoration: none; }
+.content a.btn--primary { color: #fff; }
 .content blockquote {
   border-left: 3px solid var(--color-primary);
   padding-left: 1.5rem;
@@ -582,6 +585,7 @@ h4 { font-size: 1.125rem; }
 .card-title a:hover { color: var(--color-primary); }
 .card-date { font-size: 0.8125rem; color: var(--color-text-light); display: block; margin-bottom: 0.75rem; }
 .card-excerpt { color: var(--color-text-light); font-size: 0.9375rem; line-height: 1.7; }
+.card-author { font-size: 0.875rem; color: var(--color-text-light); }
 
 /* ===== Team Grid ===== */
 .team-grid {
@@ -612,6 +616,34 @@ h4 { font-size: 1.125rem; }
   margin-bottom: 0.25rem;
 }
 .team-member p {
+  color: var(--color-text-light);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+/* Horizontal team layout (matching original WP site) */
+.team-grid--horizontal {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.team-member--horizontal {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+.team-member--horizontal .team-member-photo {
+  margin: 0;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.team-member--horizontal .team-member-info h4 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  margin-bottom: 0.125rem;
+}
+.team-member--horizontal .team-member-info p {
   color: var(--color-text-light);
   font-size: 0.8125rem;
   line-height: 1.5;
@@ -657,15 +689,15 @@ h4 { font-size: 1.125rem; }
 
 .chapter-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
   margin-top: 2rem;
 }
 .chapter-card {
   background: #fff;
   border: 1px solid var(--color-border);
   border-radius: 12px;
-  padding: 2.5rem 2rem;
+  padding: 1.5rem 1.25rem;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -729,7 +761,214 @@ h4 { font-size: 1.125rem; }
 }
 .form-group textarea { min-height: 120px; resize: vertical; }
 
-/* ===== Responsive ===== */
+/* ===== Calendar Embed ===== */
+.calendar-embed {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  margin: 2rem 0;
+}
+.calendar-embed iframe {
+  width: 100%;
+  border: none;
+  display: block;
+}
+
+/* ===== Author Bio ===== */
+.author-bio {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border);
+}
+.author-bio-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.author-bio-info h3 {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.125rem;
+}
+.author-bio-info .author-title {
+  font-size: 0.8125rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+.author-bio-info p {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* ===== Media Logo Images ===== */
+.media-logo img {
+  max-height: 32px;
+  width: auto;
+  display: block;
+}
+
+/* ===== Two Column Images ===== */
+.two-col__media img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+/* ===== Team Member Photos ===== */
+.team-member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* ===== Pathway Cards (Get Involved) ===== */
+.pathway-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.pathway-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  cursor: pointer;
+  color: var(--color-text);
+  text-decoration: none;
+}
+.pathway-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  color: var(--color-text);
+}
+.pathway-icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(139, 26, 43, 0.08);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+.pathway-icon svg {
+  width: 28px;
+  height: 28px;
+}
+.pathway-card h3 {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.pathway-card p {
+  font-size: 0.92rem;
+  color: var(--color-text-light);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ===== Find Chapter (front page chapter cards) ===== */
+.find-chapter .chapter-card {
+  border-left: 4px solid var(--color-primary);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+.find-chapter .chapter-card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.09);
+}
+.find-chapter .chapter-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.find-chapter .chapter-card .btn {
+  margin-top: auto;
+  width: fit-content;
+}
+
+/* ===== FAQ Accordion ===== */
+.faq-section .container {
+  max-width: 760px;
+}
+.faq-list {
+  margin-top: 16px;
+}
+.faq-item {
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  transition: box-shadow 0.25s ease;
+}
+.faq-item[open] {
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.08);
+}
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::marker { display: none; content: ''; }
+.faq-item summary::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--color-text-light);
+  border-bottom: 2px solid var(--color-text-light);
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+.faq-item[open] summary::after {
+  transform: rotate(-135deg);
+}
+.faq-item summary:hover { color: var(--color-primary); }
+.faq-answer {
+  padding: 0 24px 20px;
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+.faq-answer p { margin: 0; }
+.faq-answer p + p { margin-top: 0.75rem; }
+.faq-answer a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+.faq-answer a:hover { color: var(--color-primary-dark); }
+
+/* ===== Responsive (Tablet) ===== */
+@media (max-width: 1024px) {
+  .pathway-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ===== Responsive (Mobile) ===== */
 @media (max-width: 768px) {
   .menu-toggle { display: flex; }
   .main-nav {
@@ -764,5 +1003,9 @@ h4 { font-size: 1.125rem; }
   .newsletter-inner { grid-template-columns: 1fr; gap: 1.5rem; }
   .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
   .section { padding: 3.5rem 0; }
+  .pathway-grid { grid-template-columns: 1fr; gap: 16px; }
+  .chapter-grid { grid-template-columns: repeat(2, 1fr); }
+  .faq-item summary { padding: 16px 20px; font-size: 0.95rem; }
+  .faq-answer { padding: 0 20px 16px; font-size: 0.9rem; }
   .floating-cta { bottom: 1rem; right: 1rem; font-size: 0.8125rem; padding: 0.75rem 1.25rem; }
 }

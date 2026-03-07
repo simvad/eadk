@@ -15,7 +15,7 @@ theme = 'eadk'
   instagram = "https://www.instagram.com/effectivealtruismdenmark/"
   youtube = "https://www.youtube.com/channel/UCGmtXxP3dHWz9Tte_k9spzQ/featured"
   donateURL = "https://giveffektivt.dk"
-  bookChatURL = "https://effectivealtruism.dk/guidance/"
+  bookChatURL = "/guidance/"
 
 [menu]
   [[menu.main]]
@@ -34,30 +34,17 @@ theme = 'eadk'
     url = "/guidance/"
     weight = 2
   [[menu.main]]
-    name = "Opportunity Board"
-    parent = "take-action"
-    url = "/opportunity-board/"
-    weight = 3
-
-  [[menu.main]]
-    name = "Community"
-    weight = 2
-    identifier = "community"
-    url = "#"
-  [[menu.main]]
     name = "Events"
-    parent = "community"
-    url = "/events/"
-    weight = 1
-  [[menu.main]]
-    name = "Chapters"
-    parent = "community"
-    url = "/chapters/"
     weight = 2
+    url = "/events/"
+  [[menu.main]]
+    name = "Local Groups"
+    weight = 3
+    url = "/chapters/"
 
   [[menu.main]]
     name = "About Us"
-    weight = 3
+    weight = 4
     identifier = "about"
     url = "#"
   [[menu.main]]
@@ -78,7 +65,7 @@ theme = 'eadk'
 
   [[menu.main]]
     name = "Donate"
-    weight = 4
+    weight = 5
     url = "https://giveffektivt.dk"
 
 [markup]

@@ -1,0 +1,17 @@
+{{- $src := .Get "src" -}}
+{{- $height := .Get "height" | default "600" -}}
+{{- $mode := .Get "mode" | default "MONTH" -}}
+{{- $tz := "Europe/Copenhagen" -}}
+{{- $extraSrc := "" -}}
+{{- with .Get "src2" }}{{ $extraSrc = printf "%s&src=%s" $extraSrc (. | urlquery) }}{{ end -}}
+{{- with .Get "src3" }}{{ $extraSrc = printf "%s&src=%s" $extraSrc (. | urlquery) }}{{ end -}}
+{{- with .Get "src4" }}{{ $extraSrc = printf "%s&src=%s" $extraSrc (. | urlquery) }}{{ end -}}
+
+<div class="calendar-embed">
+  <iframe
+    src="https://calendar.google.com/calendar/embed?src={{ $src | urlquery }}{{ $extraSrc }}&ctz={{ $tz }}&mode={{ $mode }}"
+    height="{{ $height }}"
+    loading="lazy"
+    title="Google Calendar">
+  </iframe>
+</div>

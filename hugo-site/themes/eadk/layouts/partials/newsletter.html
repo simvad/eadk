@@ -5,9 +5,13 @@
         <h2>Join Our Newsletter</h2>
         <p>We produce a monthly newsletter which updates followers on community news, events, and job listings.</p>
       </div>
-      <form class="newsletter-form" action="#" method="post">
-        <input type="text" name="name" placeholder="Name" required aria-label="Name">
-        <input type="email" name="email" placeholder="Email Address" required aria-label="Email Address">
+      <!-- TODO: Replace with your Mailchimp form action URL -->
+      <form class="newsletter-form" action="https://effectivealtruism.us00.list-manage.com/subscribe/post" method="post">
+        <!-- TODO: Replace these with your actual Mailchimp u and id values -->
+        <input type="hidden" name="u" value="YOUR_MAILCHIMP_U">
+        <input type="hidden" name="id" value="YOUR_MAILCHIMP_ID">
+        <input type="text" name="FNAME" placeholder="First Name" required aria-label="First Name">
+        <input type="email" name="EMAIL" placeholder="Email Address" required aria-label="Email Address">
         <button type="submit" class="btn btn--primary">Subscribe</button>
       </form>
     </div>

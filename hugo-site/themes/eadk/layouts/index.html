@@ -13,35 +13,60 @@
   </div>
 </section>
 
-<!-- About EA Section -->
-<section class="section about-ea">
+<!-- Get Involved -->
+<section class="section get-involved">
   <div class="container">
-    <p class="section-label">About Effective Altruism</p>
-    <h2 class="section-title">How Can We Use Our Time &amp; Money to Help Others the Most?</h2>
-    <p class="section-intro">The effective altruist community believes that when doing good, we should use evidence and reason to guide us. Effective altruists aim to consider all causes and actions, and then act in the way that brings about the greatest positive impact.</p>
+    <p class="section-label">Take Action</p>
+    <h2 class="section-title">Get Involved</h2>
+    <p class="section-intro">There are many ways to start making a difference today</p>
 
-    <div class="values-grid">
-      <div class="value-card">
-        <div class="value-icon">
-          <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+    <div class="pathway-grid">
+      <a href="/events/" class="pathway-card">
+        <div class="pathway-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" width="48" height="48">
+            <rect x="6" y="10" width="36" height="32" rx="4"/>
+            <path d="M6 20h36"/>
+            <path d="M16 6v8M32 6v8"/>
+            <circle cx="24" cy="30" r="4" fill="currentColor" stroke="none"/>
+          </svg>
         </div>
-        <h3>Radical Empathy</h3>
-        <p>Moral consideration should extend beyond traditionally recognised groups to encompass a broader range of entities. It emphasizes the importance of identifying and valuing all beings and entities, regardless of their differences from us.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-icon">
-          <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <h3>Attend an Event</h3>
+        <p>Meet like-minded people at socials, talks, and workshops across Denmark.</p>
+      </a>
+
+      <a href="/community/" class="pathway-card">
+        <div class="pathway-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" width="48" height="48">
+            <path d="M6 8c6-2 12 0 18 3c6-3 12-5 18-3v30c-6-2-12 0-18 3c-6-3-12-5-18-3V8z"/>
+            <path d="M24 11v30"/>
+          </svg>
         </div>
-        <h3>Scope Sensitivity</h3>
-        <p>A willingness to make decisions based on a comprehensive understanding of impact and scale. It involves choosing ways to improve the world based on systematic evaluation rather than personal biases.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-icon">
-          <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <h3>Join a Reading Group</h3>
+        <p>Explore key ideas in EA through structured discussions with a small group.</p>
+      </a>
+
+      <a href="{{ .Site.Params.bookChatURL }}" class="pathway-card">
+        <div class="pathway-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" width="48" height="48">
+            <rect x="8" y="14" width="32" height="24" rx="3"/>
+            <path d="M16 14V10a8 8 0 0 1 16 0v4"/>
+            <circle cx="24" cy="26" r="3" fill="currentColor" stroke="none"/>
+            <path d="M24 29v4"/>
+          </svg>
         </div>
-        <h3>Scout Mindset</h3>
-        <p>The search to see the world as it truly is, not as we wish it to be. Consider other views and cognitive biases, and be willing to update our view based on new information.</p>
-      </div>
+        <h3>Get Career Advice</h3>
+        <p>Book a free one-on-one chat about how to have more impact with your career.</p>
+      </a>
+
+      <a href="{{ .Site.Params.donateURL }}" class="pathway-card" target="_blank" rel="noopener">
+        <div class="pathway-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" width="48" height="48">
+            <path d="M24 42S6 30 6 18a9 9 0 0 1 18 0 9 9 0 0 1 18 0c0 12-18 24-18 24z"/>
+          </svg>
+        </div>
+        <h3>Start Donating Effectively</h3>
+        <p>Give where it matters most through our partner, Giv Effektivt.</p>
+      </a>
     </div>
   </div>
 </section>
@@ -65,40 +90,61 @@
   </div>
 </section>
 
-<!-- Where to Donate Section -->
-<section class="section where-to-donate">
+<!-- Find Your Local Chapter — change false to true when chapter pages are ready -->
+{{ if false }}
+<section class="section find-chapter">
   <div class="container">
-    <div class="two-col two-col--reverse">
-      <div class="two-col__text">
-        <h2>Where to Donate</h2>
-        <p>In the quest to solve the world's most pressing issues, it's crucial to distinguish between effective and ineffective methods. Many solutions, while well-intentioned, fall short or can even be detrimental. Only a select few approaches yield significantly higher effectiveness.</p>
-        <p>To identify these exceptional strategies, we recommend turning to organizations grounded in effective altruism principles. Our sister organization, <strong>Giv Effektivt</strong>, utilizes <a href="https://www.givewell.org/research">research</a> published by <a href="https://givewell.org">GiveWell</a> to ensure recommendations are concentrated on <a href="https://giveffektivt.dk/anbefalinger">the most impactful solutions</a>.</p>
-        <a href="https://giveffektivt.dk" target="_blank" rel="noopener" class="btn btn--secondary">Donate via Giv Effektivt</a>
+    <p class="section-label">Community</p>
+    <h2 class="section-title">Find Your Local Chapter</h2>
+    <p class="section-intro">Connect with effective altruists in your city</p>
+
+    <div class="chapter-grid">
+      {{ range (where .Site.RegularPages "Section" "chapters") }}
+      <div class="chapter-card">
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Params.description }}</p>
+        <a href="{{ .RelPermalink }}" class="btn btn--secondary">Learn More</a>
       </div>
-      <div class="two-col__media">
-        <div class="image-placeholder">
-          <svg viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="currentColor" stroke-width="1"><path d="M21 15l-5-5L5 21"/><circle cx="8.5" cy="8.5" r="2.5"/><rect x="2" y="2" width="20" height="20" rx="2"/></svg>
-        </div>
-      </div>
+      {{ end }}
     </div>
   </div>
 </section>
+{{ end }}
 
-<!-- Career Section -->
-<section class="section section--alt career-section">
+<!-- FAQ Section -->
+<section class="section section--alt faq-section">
   <div class="container">
-    <div class="two-col">
-      <div class="two-col__media">
-        <div class="image-placeholder">
-          <svg viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="currentColor" stroke-width="1"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+    <p class="section-label">Learn More</p>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What is effective altruism?</summary>
+        <div class="faq-answer">
+          <p>Effective altruism is a research field and community dedicated to finding the best ways to help others. It uses evidence and careful reasoning to determine the most effective ways to improve the world. This means not just asking "How can I make a difference?" but "How can I make the <em>biggest</em> difference?"</p>
         </div>
-      </div>
-      <div class="two-col__text">
-        <h2>How to do well with your career?</h2>
-        <p>Most of us want to do something important in the world. Seeing suffering, injustice, and death around us makes us want to do something about it. However, it is not very easy to find an answer to the question of what can be done for this.</p>
-        <p>One response to this challenge is effective altruism. The research field of effective altruism focuses on the question of how to help others as much as possible. It uses high-quality evidence and careful argumentation to examine it.</p>
-        <a href="/guidance/" class="btn btn--secondary">Get Career Guidance</a>
-      </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How can I get involved?</summary>
+        <div class="faq-answer">
+          <p>There are many ways to get started! You could attend one of our events, join an introductory reading group, book a free career chat, or start by visiting <a href="{{ .Site.Params.donateURL }}">Giv Effektivt</a> to learn about high-impact giving. We welcome people at every stage of their EA journey.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Where should I donate?</summary>
+        <div class="faq-answer">
+          <p>We recommend donating through <a href="{{ .Site.Params.donateURL }}">Giv Effektivt</a>, our Danish sister organization. They follow research from GiveWell and other evaluators to recommend charities that save the most lives per krone donated. You also get Danish tax deductions.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is EA just about donating money?</summary>
+        <div class="faq-answer">
+          <p>Not at all! While effective giving is one important part, EA also encompasses career choice, volunteering, research, and community building. Many people find that choosing the right career is one of the highest-impact decisions they can make. Our career guidance service can help you think through your options.</p>
+        </div>
+      </details>
     </div>
   </div>
 </section>
@@ -108,10 +154,10 @@
   <div class="container text-center">
     <h2 class="section-title section-title--accent">Media Coverage</h2>
     <div class="media-logos">
-      <a href="https://videnskab.dk/kultur-samfund/du-kan-vaere-en-superhelt-og-redde-flere-liv-end-du-maaske-tror/" target="_blank" rel="noopener" class="media-logo">Videnskab.dk</a>
-      <a href="https://www.kristeligt-dagblad.dk/liv-og-sjael/et-liv-eller-tre-der-er-stor-forskel-paa-hvor-langt-bidrag-til-velgoerenhed-raekker" target="_blank" rel="noopener" class="media-logo">Kristeligt Dagblad</a>
-      <a href="https://www.zetland.dk/historie/sOZkb3Na-aekdm0J7-2e0b2" target="_blank" rel="noopener" class="media-logo">Zetland</a>
-      <a href="https://www.radio4.dk/program/overskud/?gid=48650" target="_blank" rel="noopener" class="media-logo">Radio4</a>
+      <a href="https://videnskab.dk/kultur-samfund/du-kan-vaere-en-superhelt-og-redde-flere-liv-end-du-maaske-tror/" target="_blank" rel="noopener" class="media-logo"><img src="/images/videnskab.png" alt="Videnskab.dk" loading="lazy"></a>
+      <a href="https://www.kristeligt-dagblad.dk/liv-og-sjael/et-liv-eller-tre-der-er-stor-forskel-paa-hvor-langt-bidrag-til-velgoerenhed-raekker" target="_blank" rel="noopener" class="media-logo"><img src="/images/kristeligt-dagblad.webp" alt="Kristeligt Dagblad" loading="lazy"></a>
+      <a href="https://www.zetland.dk/historie/sOZkb3Na-aekdm0J7-2e0b2" target="_blank" rel="noopener" class="media-logo"><img src="/images/zetland.png" alt="Zetland" loading="lazy"></a>
+      <a href="https://www.radio4.dk/program/overskud/?gid=48650" target="_blank" rel="noopener" class="media-logo"><img src="/images/radio4.png" alt="Radio4" loading="lazy"></a>
     </div>
   </div>
 </section>

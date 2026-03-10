@@ -49,7 +49,12 @@ Priority: 🔴 high, 🟡 medium, 🟢 low. Add your name if you're working on s
 - [ ] 🟡 Add description and content Aarhus chapter
 - [ ] 🟡 Add description and content Odense chapter
 - [ ] 🟡 Add description and content Aalborg chapter
+- [ ] 🟢 local groups - names & faces of our community builders.
 
 ### Content & design
 - [ ] 🔴 Review front page layout and decide on final look (do we want the old header/footer images?)
 - [ ] 🟡 Set up a proper newsletter solution (replace temporary Google Forms)
+- [ ] 🔴 "join reading group" leads to a 404 page
+- [ ] 🔴 The "Get in touch" career advice button doesnt do anything
+- [ ] 🟢 board members (names & faces, ultra short bio/cv) at the bottom of "about us"
+- [ ] 🔴 Become a member button

@@ -57,4 +57,4 @@ Priority: 🔴 high, 🟡 medium, 🟢 low. Add your name if you're working on s
 - [ ] 🔴 "join reading group" leads to a 404 page
 - [ ] 🔴 The "Get in touch" career advice button doesnt do anything
 - [ ] 🟢 board members (names & faces, ultra short bio/cv) at the bottom of "about us"
-- [ ] 🔴 Become a member button
+- [ ] 🔴 Become a member button - @Albert to share a donorbox URL

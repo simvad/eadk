@@ -28,33 +28,3 @@ git push -u origin task-name
 ```
 
 Then open a pull request on GitHub.
-
-## TODO
-
-Priority: 🔴 high, 🟡 medium, 🟢 low. Add your name if you're working on something.
-
-### Translation (branch: `feature/language-toggle`)
-- [ ] 🔴 Review and polish Danish translation of Front page
-- [ ] 🔴 Review and polish Danish translation of About page
-- [ ] 🔴 Review and polish Danish translation of Become a Member page
-- [ ] 🔴 Review and polish Danish translation of Career Guidance page
-- [ ] 🔴 Review and polish Danish translation of Introduction page
-- [ ] 🔴 Review and polish Danish translation of Events page
-- [ ] 🔴 Review and polish Danish translation of Contact page
-- [ ] 🔴 Merge `feature/language-toggle` into main when translations are done
-
-### Chapter pages
-- [ ] 🟡 Figure out if we want calendars per chapter (or is there a smart filter thing?)
-- [ ] 🟡 Add description and content Copenhagen chapter
-- [ ] 🟡 Add description and content Aarhus chapter
-- [ ] 🟡 Add description and content Odense chapter
-- [ ] 🟡 Add description and content Aalborg chapter
-- [ ] 🟢 local groups - names & faces of our community builders.
-
-### Content & design
-- [ ] 🔴 Review front page layout and decide on final look (do we want the old header/footer images?)
-- [ ] 🟡 Set up a proper newsletter solution (replace temporary Google Forms)
-- [ ] 🔴 "join reading group" leads to a 404 page
-- [ ] 🔴 The "Get in touch" career advice button doesnt do anything
-- [ ] 🟢 board members (names & faces, ultra short bio/cv) at the bottom of "about us"
-- [ ] 🔴 Become a member button - @Albert to share a donorbox URL

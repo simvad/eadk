@@ -14,9 +14,9 @@ Website for [effectivealtruism.dk](https://effectivealtruism.dk), built with [Hu
 As long as we are a small team of collaborators, you can push straight to main if you are confident in your change. Alternatively please make your change in a new branch and create a pull request for it: 
 
 ```
-git checkout main
+git switch main
 git pull
-git checkout -b task-name
+git switch -c task-name
 ```
 
 Make your changes, then:
